@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /*--background: #0a0a0a;
+    --foreground: #ededed;*/
   }
 }
 
@@ -18,4 +18,31 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cells{
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 80vh;
+  width: 80vh;
+  margin: 0 auto;
+}
+
+.grid-cell{
+  border: 1px solid black;
+}
+
+.content{
+  text-align: center;
+}
+
+.start-cell{
+  background-color: green;
+}
+
+.end-cell{
+  background-color: red;
 }
